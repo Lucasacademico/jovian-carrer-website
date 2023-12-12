@@ -6,3 +6,4 @@
 - https://www.htmldog.com/ - Link tutorial de html usado pelo curso
 - https://unsplash.com/pt-br - Site de imagens grátis pra uso
 - https://fonts.google.com/ - Fontes para importar do google
+- https://getbootstrap.com/ - Site Bootstrap
