@@ -46,6 +46,7 @@ Após carregar o repositório no Render:
 
 Após finalizado a preparação do ambiente:
 - Clicar no link da instancia criada, e acessar o site que já está pronto para acesso!
+    OBs: Toda alteração no ambiente, após fazermos o push, será atualizado no site.
 
 Documentação deploy Render para flask:
 - https://render.com/docs/deploy-flask
