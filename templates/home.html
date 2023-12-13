@@ -31,18 +31,8 @@
         <h2 class="text-center mt-2 mb-4">Vagas abertas</h2>
         <div>
             {% for job in jobs %}
-            <div style="margin-bottom: 16px;">
-                <h4 style="color: rgb(120, 120, 120); margin-bottom: 4px;">{{job['title']}}</h4>
-                <div>
-                    <b>Location:</b> {{job['location']}}
-                </div>
-                <!-- Criado bloco if com sintaxe flask para mostrar somente os salarios existentes DB jobs -->
-                {% if 'salary' in job%}
-                <div>
-                    <b>Salary:</b> {{job['salary']}}
-                </div>
-                {% endif %}
-            </div>
+            <!-- Importando linha de código para deixar código mais organizado -->
+            {% include 'jobitem.html' %}
             {% endfor %}
         </div>
         <div class="text-center">
