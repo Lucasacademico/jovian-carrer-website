@@ -30,7 +30,17 @@
             quaerat
             autem, suscipit nihil?</p>
         <h2 class="text-center mt-2 mb-4">Vagas abertas</h2>
-        <p>{{jobs}}</p>
+        <!-- <p>{{jobs}}</p> -->
+        <div>
+            <!-- Chamada de FOR na sintaxe Flask com chamada de dados -->
+            {% for job in jobs %}
+            <div style="margin-bottom: 16px;">
+                <h4 style="color: rgb(120, 120, 120); margin-bottom: 4px;">{{job['title']}}</h4>
+                <div><b>Location:</b> {{job['location']}}</div>
+                <div><b>Salary:</b> {{job['salary']}}</div>
+            </div>
+            {% endfor %}
+        </div>
         <div class="text-center">
             <button class="btn btn-info">Fale conosco</button>
             <p class="mt-4">Copyright 2023, Jovian</p>
