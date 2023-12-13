@@ -18,7 +18,6 @@
 
 <body>
     <div class="container">
-        <!-- Chamada da nova variavel company_name para saída do valor 'Jovian' -->
         <h1 class="text-center mt-2 mb-4">{{company_name}} Carrers</h1>
         <img class="img-fluid" id="banner" src="../static/banner.jpg" height='320'>
         <h2 class="text-center mt-2 mb-4">Sobre a Jovian</h2>
@@ -30,14 +29,19 @@
             quaerat
             autem, suscipit nihil?</p>
         <h2 class="text-center mt-2 mb-4">Vagas abertas</h2>
-        <!-- <p>{{jobs}}</p> -->
         <div>
-            <!-- Chamada de FOR na sintaxe Flask com chamada de dados -->
             {% for job in jobs %}
             <div style="margin-bottom: 16px;">
                 <h4 style="color: rgb(120, 120, 120); margin-bottom: 4px;">{{job['title']}}</h4>
-                <div><b>Location:</b> {{job['location']}}</div>
-                <div><b>Salary:</b> {{job['salary']}}</div>
+                <div>
+                    <b>Location:</b> {{job['location']}}
+                </div>
+                <!-- Criado bloco if com sintaxe flask para mostrar somente os salarios existentes DB jobs -->
+                {% if 'salary' in job%}
+                <div>
+                    <b>Salary:</b> {{job['salary']}}
+                </div>
+                {% endif %}
             </div>
             {% endfor %}
         </div>

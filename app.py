@@ -20,7 +20,6 @@ JOBS = [
         'id': 3,
         'title': 'Data Scientist',
         'location': 'Remote',
-        'salary': 'R$ 12000'
     },
     {
         'id': 4,
@@ -34,7 +33,6 @@ JOBS = [
 
 @app.route("/")
 def hello_jovian():
-    # Criada outra variavel para saída do nome da compania como exemplo
     return render_template('home.html', jobs=JOBS, company_name='Jovian')
 
 
