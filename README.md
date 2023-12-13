@@ -7,3 +7,4 @@
 - https://unsplash.com/pt-br - Site de imagens grátis pra uso
 - https://fonts.google.com/ - Fontes para importar do google
 - https://getbootstrap.com/ - Site Bootstrap
+- https://replit.com/ - Ambiente virtual online para desenvolvimento
