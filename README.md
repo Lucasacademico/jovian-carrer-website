@@ -39,5 +39,15 @@ Após carregar o repositório no Render:
 - Clicar em connect
 - Name: Jovia Carrers Website
 - Region: Oregon (é a melhor aqui pro BR)
+- Comando para iniciar: gunicorn app:app
+- Selecione o modo gratis (que não tamo com essa grana toda)
+- Selecione instalar no final
+- APós isso o ambiente será preparado
+
+Após finalizado a preparação do ambiente:
+- Clicar no link da instancia criada, e acessar o site que já está pronto para acesso!
+
+Documentação deploy Render para flask:
+- https://render.com/docs/deploy-flask
 
 
