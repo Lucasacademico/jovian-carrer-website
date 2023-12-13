@@ -18,7 +18,8 @@
 
 <body>
     <div class="container">
-        <h1 class="text-center mt-2 mb-4">Jovian Carrers</h1>
+        <!-- Chamada da nova variavel company_name para saída do valor 'Jovian' -->
+        <h1 class="text-center mt-2 mb-4">{{company_name}} Carrers</h1>
         <img class="img-fluid" id="banner" src="../static/banner.jpg" height='320'>
         <h2 class="text-center mt-2 mb-4">Sobre a Jovian</h2>
         <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, tenetur aut voluptates ad
@@ -29,9 +30,7 @@
             quaerat
             autem, suscipit nihil?</p>
         <h2 class="text-center mt-2 mb-4">Vagas abertas</h2>
-        <!-- Realizando chamada da DB jobs para saida no HTML, Porém neste formato apenas mostra os dados de maneira bruta -->
         <p>{{jobs}}</p>
-
         <div class="text-center">
             <button class="btn btn-info">Fale conosco</button>
             <p class="mt-4">Copyright 2023, Jovian</p>

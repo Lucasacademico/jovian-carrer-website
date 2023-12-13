@@ -2,7 +2,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-# Estrutura de Banco de dados de empresas 
+# Estrutura de Banco de dados de empresas
 JOBS = [
     {
         'id': 1,
@@ -31,10 +31,12 @@ JOBS = [
 
 ]
 
+
 @app.route("/")
-def hello_jovian(): 
-    # Passando a var do DB no retorno da rota
-    return render_template('home.html', jobs=JOBS)
+def hello_jovian():
+    # Criada outra variavel para saída do nome da compania como exemplo
+    return render_template('home.html', jobs=JOBS, company_name='Jovian')
+
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)
