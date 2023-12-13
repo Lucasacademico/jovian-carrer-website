@@ -1,19 +1,16 @@
-<!-- Criado jobitem.html para separar estruturação e deixar organizado o código principal html -->
-
-<!-- 
-    - Adicionado classe bootstrap 'border-bottom' para adicionar bordas no final de cada vaga
-    - Adicionado padding-bottom no entre o conteúdo e a borda bootstrap
- -->
-<div class="border-bottom" style="margin-bottom: 16px; padding-bottom: 4px;">
-
-    <h4 style="color: rgb(120, 120, 120); margin-bottom: 4px;">{{job['title']}}</h4>
-    <div>
-        <b>Location:</b> {{job['location']}}
+<div class="border-bottom row" style="margin-bottom: 16px; padding-bottom: 4px;">
+    <div class="col-10">
+        <h4 style="color: rgb(120, 120, 120); margin-bottom: 4px;">{{job['title']}}</h4>
+        <div>
+            <b>Location:</b> {{job['location']}}
+        </div>
+        {% if 'salary' in job%}
+        <div>
+            <b>Salary:</b> {{job['salary']}}
+        </div>
+        {% endif %}
     </div>
-    {% if 'salary' in job%}
-    <div>
-        <b>Salary:</b> {{job['salary']}}
+    <div class="col-2">
+        <button type="button" class="btn btn-outline-primary">Apply</button>
     </div>
-    {% endif %}
-
 </div>
