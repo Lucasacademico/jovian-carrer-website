@@ -1,9 +1,7 @@
-# Importado biblioteca jsonify que converte objetos Python em formato JSON
 from flask import Flask, render_template, jsonify
 
 app = Flask(__name__)
 
-# Estrutura de Banco de dados de empresas
 JOBS = [
     {
         'id': 1,
@@ -37,7 +35,6 @@ def hello_jovian():
     return render_template('home.html', jobs=JOBS, company_name='Jovian')
 
 
-# Rota que possibilita verificarmos os dados do DB do site em JSON
 @app.route("/api/jobs")
 def list_jobs():
     return jsonify(JOBS)

@@ -9,6 +9,7 @@
 - https://getbootstrap.com/ - Site Bootstrap
 - https://replit.com/ - Ambiente virtual online para desenvolvimento
 - https://render.com/ - Site simples para deploy de sites
+- https://domains.google/intl/pt-BR_br/ - Compra de domínios para sites
 
 ## Realizando o Deploy com Render
 
@@ -51,4 +52,12 @@ Após finalizado a preparação do ambiente:
 Documentação deploy Render para flask:
 - https://render.com/docs/deploy-flask
 
+
+## Compra de domínios
+
+Acessar o Google Domain
+- Ir na área de compras
+- Pesquisar nome
+- Realizar a compra
+- Não registrarei como conectar o dominio no render.
 
